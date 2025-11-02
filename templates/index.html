@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaaServer</title>
+</head>
+
+<body>
+    <p>内存占用：{{memory_usage}}</p>
+    <p>下次运行时间：{{next_run_datetime}}</p>
+    <p>任务报告：</p>
+    {% for report in reports %}
+    <pre>{{report}}</pre>
+    {% endfor %}
+</body>
+
+</html>
